@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Login.RegisterPage">
+
+    <StackLayout Padding="20"
+            VerticalOptions="Center">
+        <Label Text="Welcome to Register Page!"
+            FontSize="Large"
+            VerticalOptions="Center"
+            HorizontalOptions="Center" />
+        <Entry x:Name="a"
+            Placeholder="Username"
+            FontSize="Large"
+            />
+        <Entry x:Name="b"
+            Placeholder="Password"
+            FontSize="Large"
+            IsPassword="True"
+            />
+        <Button x:Name="btnRegister"
+            Text="Register"
+            Font="large"
+            BackgroundColor="LightBlue"
+            Clicked="btnRegister_ClickedAsync"
+            />
+    </StackLayout>
+
+</ContentPage>
